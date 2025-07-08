@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03D5AE7D-F20B-4AE8-AD7C-C928904BE218}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Облік_часу_за_робочими_картками</RootNamespace>
+    <AssemblyName>Облік часу за робочими картками</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="entry_cards_KRBDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>entry_cards_KRBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin.Designer.cs">
+      <DependentUpon>Form_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_customer.Designer.cs">
+      <DependentUpon>Form_admin_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_department.Designer.cs">
+      <DependentUpon>Form_admin_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_equipment.Designer.cs">
+      <DependentUpon>Form_admin_equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_order.Designer.cs">
+      <DependentUpon>Form_admin_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_worker.Designer.cs">
+      <DependentUpon>Form_admin_worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_worker_cards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_worker_cards.Designer.cs">
+      <DependentUpon>Form_admin_worker_cards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_worker_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_worker_order.Designer.cs">
+      <DependentUpon>Form_admin_worker_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_admin_working_hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_admin_working_hours.Designer.cs">
+      <DependentUpon>Form_admin_working_hours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_author.Designer.cs">
+      <DependentUpon>Form_author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_card.Designer.cs">
+      <DependentUpon>Form_card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_customer.Designer.cs">
+      <DependentUpon>Form_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_department.Designer.cs">
+      <DependentUpon>Form_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_department_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_department_order.Designer.cs">
+      <DependentUpon>Form_department_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_equipment.Designer.cs">
+      <DependentUpon>Form_equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_order.Designer.cs">
+      <DependentUpon>Form_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_order_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_order_customer.Designer.cs">
+      <DependentUpon>Form_order_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_order_rating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_order_rating.Designer.cs">
+      <DependentUpon>Form_order_rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_table.Designer.cs">
+      <DependentUpon>Form_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_user_cards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_user_cards.Designer.cs">
+      <DependentUpon>Form_user_cards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_worker.Designer.cs">
+      <DependentUpon>Form_worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_worker_department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_worker_department.Designer.cs">
+      <DependentUpon>Form_worker_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_worker_month.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_worker_month.Designer.cs">
+      <DependentUpon>Form_worker_month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_worker_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_worker_order.Designer.cs">
+      <DependentUpon>Form_worker_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_worker_working_hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_worker_working_hours.Designer.cs">
+      <DependentUpon>Form_worker_working_hours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_working_house.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_working_house.Designer.cs">
+      <DependentUpon>Form_working_house.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin.resx">
+      <DependentUpon>Form_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_customer.resx">
+      <DependentUpon>Form_admin_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_department.resx">
+      <DependentUpon>Form_admin_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_equipment.resx">
+      <DependentUpon>Form_admin_equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_order.resx">
+      <DependentUpon>Form_admin_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_worker.resx">
+      <DependentUpon>Form_admin_worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_worker_cards.resx">
+      <DependentUpon>Form_admin_worker_cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_worker_order.resx">
+      <DependentUpon>Form_admin_worker_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_admin_working_hours.resx">
+      <DependentUpon>Form_admin_working_hours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_author.resx">
+      <DependentUpon>Form_author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_card.resx">
+      <DependentUpon>Form_card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_customer.resx">
+      <DependentUpon>Form_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_department.resx">
+      <DependentUpon>Form_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_department_order.resx">
+      <DependentUpon>Form_department_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_equipment.resx">
+      <DependentUpon>Form_equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_order.resx">
+      <DependentUpon>Form_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_order_customer.resx">
+      <DependentUpon>Form_order_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_order_rating.resx">
+      <DependentUpon>Form_order_rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_table.resx">
+      <DependentUpon>Form_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_user_cards.resx">
+      <DependentUpon>Form_user_cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_worker.resx">
+      <DependentUpon>Form_worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_worker_department.resx">
+      <DependentUpon>Form_worker_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_worker_month.resx">
+      <DependentUpon>Form_worker_month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_worker_order.resx">
+      <DependentUpon>Form_worker_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_worker_working_hours.resx">
+      <DependentUpon>Form_worker_working_hours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_working_house.resx">
+      <DependentUpon>Form_working_house.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="entry_cards_KRBDDataSet.xsc">
+      <DependentUpon>entry_cards_KRBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="entry_cards_KRBDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>entry_cards_KRBDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="entry_cards_KRBDDataSet.xss">
+      <DependentUpon>entry_cards_KRBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1385_Disable_24x24_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noresults_uncompressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6e3677f8901117ea5830be35baa2f9f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1385_Disable_24x24_721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1385_Disable_24x24_722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-picture1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
